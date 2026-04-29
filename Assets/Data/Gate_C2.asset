@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 17c8c1bc6d558e241812c7b674687a61, type: 3}
-  m_Name: Gate_B7
+  m_Name: Gate_C2
   m_EditorClassIdentifier: Assembly-CSharp::Nibrask.Data.DestinationData
-  destinationName: Gate B7
+  destinationName: Gate C2
   destinationType: 0
   icon: {fileID: 0}
-  relativePosition: {x: 16, y: 0, z: 10}
-  nearestWaypointIndex: 12
-  flightNumber: BA-117
-  boardingTime: 17:45
-  airlineName: British Airways
+  relativePosition: {x: 7, y: 0, z: 15}
+  nearestWaypointIndex: 22
+  flightNumber: KU-502
+  boardingTime: 17:00
+  airlineName: Kuwait Airways

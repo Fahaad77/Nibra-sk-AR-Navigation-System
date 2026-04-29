@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 17c8c1bc6d558e241812c7b674687a61, type: 3}
-  m_Name: Security_Checkpoint
+  m_Name: Gate_A3
   m_EditorClassIdentifier: Assembly-CSharp::Nibrask.Data.DestinationData
-  destinationName: Security Checkpoint
-  destinationType: 3
+  destinationName: Gate A3
+  destinationType: 0
   icon: {fileID: 0}
-  relativePosition: {x: 0, y: 0, z: 2}
-  nearestWaypointIndex: 2
-  flightNumber: 
-  boardingTime: 
-  airlineName: 
+  relativePosition: {x: -4, y: 0, z: 14}
+  nearestWaypointIndex: 17
+  flightNumber: QR-405
+  boardingTime: 16:00
+  airlineName: Qatar Airways

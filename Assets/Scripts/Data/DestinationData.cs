@@ -13,7 +13,8 @@ namespace Nibrask.Data
         SecurityCheckpoint,
         Exit,
         Information,
-        Lounge
+        Lounge,
+        Cafe
     }
 
     /// <summary>
@@ -76,6 +77,7 @@ namespace Nibrask.Data
                 DestinationType.Exit => "Exit",
                 DestinationType.Information => "Info",
                 DestinationType.Lounge => "Lounge",
+                DestinationType.Cafe => "Café",
                 _ => "Location"
             };
         }

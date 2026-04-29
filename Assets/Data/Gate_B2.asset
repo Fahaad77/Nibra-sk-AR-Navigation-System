@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 17c8c1bc6d558e241812c7b674687a61, type: 3}
-  m_Name: Restaurant_SkyLounge
+  m_Name: Gate_B2
   m_EditorClassIdentifier: Assembly-CSharp::Nibrask.Data.DestinationData
-  destinationName: "Sky Lounge Caf\xE9"
-  destinationType: 2
+  destinationName: Gate B2
+  destinationType: 0
   icon: {fileID: 0}
-  relativePosition: {x: 8, y: 0, z: 5}
-  nearestWaypointIndex: 8
-  flightNumber: 
-  boardingTime: 
-  airlineName: 
+  relativePosition: {x: 0, y: 0, z: 19}
+  nearestWaypointIndex: 19
+  flightNumber: MS-801
+  boardingTime: 15:30
+  airlineName: EgyptAir

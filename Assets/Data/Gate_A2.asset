@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 17c8c1bc6d558e241812c7b674687a61, type: 3}
-  m_Name: Exit_Main
+  m_Name: Gate_A2
   m_EditorClassIdentifier: Assembly-CSharp::Nibrask.Data.DestinationData
-  destinationName: Main Exit
-  destinationType: 4
+  destinationName: Gate A2
+  destinationType: 0
   icon: {fileID: 0}
-  relativePosition: {x: -4, y: 0, z: -1}
-  nearestWaypointIndex: 0
-  flightNumber: 
-  boardingTime: 
-  airlineName: 
+  relativePosition: {x: -7, y: 0, z: 15}
+  nearestWaypointIndex: 16
+  flightNumber: EK-302
+  boardingTime: 15:15
+  airlineName: Emirates

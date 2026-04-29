@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 17c8c1bc6d558e241812c7b674687a61, type: 3}
-  m_Name: Security_Checkpoint
+  m_Name: Exit
   m_EditorClassIdentifier: Assembly-CSharp::Nibrask.Data.DestinationData
-  destinationName: Security Checkpoint
-  destinationType: 3
+  destinationName: Exit
+  destinationType: 4
   icon: {fileID: 0}
-  relativePosition: {x: 0, y: 0, z: 2}
-  nearestWaypointIndex: 2
+  relativePosition: {x: -4, y: 0, z: -2}
+  nearestWaypointIndex: 1
   flightNumber: 
   boardingTime: 
   airlineName: 

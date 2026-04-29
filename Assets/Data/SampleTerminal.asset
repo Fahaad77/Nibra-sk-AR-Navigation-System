@@ -14,78 +14,141 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Nibrask.Data.TerminalMapData
   terminalName: Terminal 1
   destinations:
-  - {fileID: 11400000, guid: 4b522fe4f587ba945b659c27711c1fd6, type: 2}
-  - {fileID: 11400000, guid: 9c30b3313ad5e8b439522abe82889552, type: 2}
-  - {fileID: 11400000, guid: 14582d642cce7a74580e9b15a205007a, type: 2}
-  - {fileID: 11400000, guid: 44e0e620e0a9b7940befa67e9d1a96d7, type: 2}
-  - {fileID: 11400000, guid: 3ba07d502a4822244a1d0ae03cab1842, type: 2}
-  - {fileID: 11400000, guid: 8ea82093bdb61364c930d7f4ba09e048, type: 2}
-  - {fileID: 11400000, guid: b8ab0212fe52bdb4d912c298948b145c, type: 2}
-  - {fileID: 11400000, guid: 43e13df341233a240bab12c5f0aa8c7a, type: 2}
+  - {fileID: 11400000, guid: a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d1, type: 2}
+  - {fileID: 11400000, guid: a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d2, type: 2}
+  - {fileID: 11400000, guid: a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d3, type: 2}
+  - {fileID: 11400000, guid: a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d4, type: 2}
+  - {fileID: 11400000, guid: a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d5, type: 2}
+  - {fileID: 11400000, guid: a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6, type: 2}
+  - {fileID: 11400000, guid: a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d7, type: 2}
+  - {fileID: 11400000, guid: b1000000000000000000000000000001, type: 2}
+  - {fileID: 11400000, guid: b1000000000000000000000000000002, type: 2}
+  - {fileID: 11400000, guid: b1000000000000000000000000000003, type: 2}
+  - {fileID: 11400000, guid: b1000000000000000000000000000004, type: 2}
+  - {fileID: 11400000, guid: b1000000000000000000000000000005, type: 2}
+  - {fileID: 11400000, guid: b1000000000000000000000000000006, type: 2}
+  - {fileID: 11400000, guid: b1000000000000000000000000000007, type: 2}
+  - {fileID: 11400000, guid: b1000000000000000000000000000008, type: 2}
+  - {fileID: 11400000, guid: b1000000000000000000000000000009, type: 2}
   waypoints:
   - nodeId: 0
-    relativePosition: {x: -4, y: 0, z: -1}
-    connectedNodeIds: 01000000
-    isDestinationNode: 0
-    debugLabel: Exit
-  - nodeId: 1
-    relativePosition: {x: 0, y: 0, z: 2}
-    connectedNodeIds: 000000000200000003000000
-    isDestinationNode: 0
-    debugLabel: Security
-  - nodeId: 2
     relativePosition: {x: 0, y: 0, z: 0}
-    connectedNodeIds: 0100000003000000
+    connectedNodeIds: 0100000002000000
     isDestinationNode: 0
-    debugLabel: Entrance
+    debugLabel: Start
+  - nodeId: 1
+    relativePosition: {x: -4, y: 0, z: -2}
+    connectedNodeIds: 00000000
+    isDestinationNode: 1
+    debugLabel: Exit
+  - nodeId: 2
+    relativePosition: {x: 0, y: 0, z: 2}
+    connectedNodeIds: 0000000003000000
+    isDestinationNode: 1
+    debugLabel: Security
   - nodeId: 3
-    relativePosition: {x: 3, y: 0, z: 5}
-    connectedNodeIds: 01000000020000000400000008000000
+    relativePosition: {x: 0, y: 0, z: 5}
+    connectedNodeIds: 020000000400000005000000060000000700000008000000
     isDestinationNode: 0
-    debugLabel: Junction
+    debugLabel: Central Hub
   - nodeId: 4
-    relativePosition: {x: 4, y: 0, z: 0}
-    connectedNodeIds: 0300000005000000
-    isDestinationNode: 0
-    debugLabel: ConcA Start
+    relativePosition: {x: 4, y: 0, z: 4}
+    connectedNodeIds: 03000000
+    isDestinationNode: 1
+    debugLabel: Information
   - nodeId: 5
-    relativePosition: {x: 7, y: 0, z: 0}
-    connectedNodeIds: 0400000006000000
+    relativePosition: {x: -4, y: 0, z: 4}
+    connectedNodeIds: 03000000
     isDestinationNode: 1
-    debugLabel: Gate A12
+    debugLabel: Lounge
   - nodeId: 6
-    relativePosition: {x: 11, y: 0, z: 0}
-    connectedNodeIds: 0500000007000000
-    isDestinationNode: 0
-    debugLabel: ConcA Mid
-  - nodeId: 7
-    relativePosition: {x: 16, y: 0, z: 0}
-    connectedNodeIds: 06000000
-    isDestinationNode: 1
-    debugLabel: Gate A14
-  - nodeId: 8
-    relativePosition: {x: 8, y: 0, z: 5}
+    relativePosition: {x: -4, y: 0, z: 7}
     connectedNodeIds: 0300000009000000
     isDestinationNode: 0
-    debugLabel: Restaurant
-  - nodeId: 9
-    relativePosition: {x: 4, y: 0, z: 10}
-    connectedNodeIds: 080000000a000000
+    debugLabel: Left Fork
+  - nodeId: 7
+    relativePosition: {x: 0, y: 0, z: 8}
+    connectedNodeIds: 030000000a000000
     isDestinationNode: 0
-    debugLabel: ConcB Start
+    debugLabel: Center Fork
+  - nodeId: 8
+    relativePosition: {x: 4, y: 0, z: 7}
+    connectedNodeIds: 030000000b000000
+    isDestinationNode: 0
+    debugLabel: Right Fork
+  - nodeId: 9
+    relativePosition: {x: -7, y: 0, z: 9}
+    connectedNodeIds: 060000000c000000
+    isDestinationNode: 1
+    debugLabel: Cafe
   - nodeId: 10
-    relativePosition: {x: 7, y: 0, z: 10}
-    connectedNodeIds: 090000000b000000
+    relativePosition: {x: 0, y: 0, z: 12}
+    connectedNodeIds: 070000000d000000
+    isDestinationNode: 1
+    debugLabel: Restaurant
+  - nodeId: 11
+    relativePosition: {x: 7, y: 0, z: 9}
+    connectedNodeIds: 080000000e000000
+    isDestinationNode: 1
+    debugLabel: Restroom
+  - nodeId: 12
+    relativePosition: {x: -7, y: 0, z: 12}
+    connectedNodeIds: 090000000f0000001000000011000000
+    isDestinationNode: 0
+    debugLabel: Cafe Gate Hub
+  - nodeId: 13
+    relativePosition: {x: 0, y: 0, z: 15}
+    connectedNodeIds: 0a000000120000001300000014000000
+    isDestinationNode: 0
+    debugLabel: Restaurant Gate Hub
+  - nodeId: 14
+    relativePosition: {x: 7, y: 0, z: 12}
+    connectedNodeIds: 0b000000150000001600000017000000
+    isDestinationNode: 0
+    debugLabel: Restroom Gate Hub
+  - nodeId: 15
+    relativePosition: {x: -10, y: 0, z: 14}
+    connectedNodeIds: 0c000000
+    isDestinationNode: 1
+    debugLabel: Gate A1
+  - nodeId: 16
+    relativePosition: {x: -7, y: 0, z: 15}
+    connectedNodeIds: 0c000000
+    isDestinationNode: 1
+    debugLabel: Gate A2
+  - nodeId: 17
+    relativePosition: {x: -4, y: 0, z: 14}
+    connectedNodeIds: 0c000000
+    isDestinationNode: 1
+    debugLabel: Gate A3
+  - nodeId: 18
+    relativePosition: {x: -3, y: 0, z: 18}
+    connectedNodeIds: 0d000000
+    isDestinationNode: 1
+    debugLabel: Gate B1
+  - nodeId: 19
+    relativePosition: {x: 0, y: 0, z: 19}
+    connectedNodeIds: 0d000000
+    isDestinationNode: 1
+    debugLabel: Gate B2
+  - nodeId: 20
+    relativePosition: {x: 3, y: 0, z: 18}
+    connectedNodeIds: 0d000000
     isDestinationNode: 1
     debugLabel: Gate B3
-  - nodeId: 11
-    relativePosition: {x: 11, y: 0, z: 10}
-    connectedNodeIds: 0a0000000c000000
-    isDestinationNode: 0
-    debugLabel: ConcB Mid
-  - nodeId: 12
-    relativePosition: {x: 16, y: 0, z: 10}
-    connectedNodeIds: 0b000000
+  - nodeId: 21
+    relativePosition: {x: 4, y: 0, z: 14}
+    connectedNodeIds: 0e000000
     isDestinationNode: 1
-    debugLabel: Gate B7
+    debugLabel: Gate C1
+  - nodeId: 22
+    relativePosition: {x: 7, y: 0, z: 15}
+    connectedNodeIds: 0e000000
+    isDestinationNode: 1
+    debugLabel: Gate C2
+  - nodeId: 23
+    relativePosition: {x: 10, y: 0, z: 14}
+    connectedNodeIds: 0e000000
+    isDestinationNode: 1
+    debugLabel: Gate C3
   scaleFactor: 1

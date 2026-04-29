@@ -15,8 +15,8 @@ MonoBehaviour:
   destinationName: Gate B3
   destinationType: 0
   icon: {fileID: 0}
-  relativePosition: {x: 7, y: 0, z: 10}
-  nearestWaypointIndex: 10
-  flightNumber: QR-881
-  boardingTime: 16:15
-  airlineName: Qatar Airways
+  relativePosition: {x: 3, y: 0, z: 18}
+  nearestWaypointIndex: 20
+  flightNumber: GF-115
+  boardingTime: 16:30
+  airlineName: Gulf Air

@@ -212,6 +212,8 @@ namespace Nibrask.DebugUtils
                     return Color.cyan;
                 case DestinationType.Restaurant:
                     return new Color(1f, 0.5f, 0f);
+                case DestinationType.Cafe:
+                    return new Color(0.6f, 0.35f, 0.15f); // Warm brown
                 case DestinationType.SecurityCheckpoint:
                     return new Color(1f, 1f, 0.3f);
                 case DestinationType.Exit:
@@ -344,8 +346,12 @@ namespace Nibrask.DebugUtils
                     color = Color.cyan;
                     break;
                 case DestinationType.Restaurant:
-                    primType = PrimitiveType.Sphere;
+                    primType = PrimitiveType.Cube;
                     color = new Color(1f, 0.5f, 0f); // Orange
+                    break;
+                case DestinationType.Cafe:
+                    primType = PrimitiveType.Cube;
+                    color = new Color(0.6f, 0.35f, 0.15f); // Warm brown
                     break;
                 case DestinationType.SecurityCheckpoint:
                     primType = PrimitiveType.Capsule;
