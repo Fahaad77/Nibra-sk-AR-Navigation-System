@@ -2481,18 +2481,6 @@ MonoBehaviour:
   typePrefabs:
   - destinationType: 0
     prefab: {fileID: 6535751743217992273, guid: 784d8e8c28fcea346bb3320f8d6fac83, type: 3}
-  - destinationType: 1
-    prefab: {fileID: 6535751743217992273, guid: 784d8e8c28fcea346bb3320f8d6fac83, type: 3}
-  - destinationType: 2
-    prefab: {fileID: 6535751743217992273, guid: 784d8e8c28fcea346bb3320f8d6fac83, type: 3}
-  - destinationType: 3
-    prefab: {fileID: 6535751743217992273, guid: 784d8e8c28fcea346bb3320f8d6fac83, type: 3}
-  - destinationType: 4
-    prefab: {fileID: 6535751743217992273, guid: 784d8e8c28fcea346bb3320f8d6fac83, type: 3}
-  - destinationType: 5
-    prefab: {fileID: 6535751743217992273, guid: 784d8e8c28fcea346bb3320f8d6fac83, type: 3}
-  - destinationType: 6
-    prefab: {fileID: 6535751743217992273, guid: 784d8e8c28fcea346bb3320f8d6fac83, type: 3}
   fallbackMarkerScale: 0.15
   showLabels: 1
   labelHeightOffset: 1.25

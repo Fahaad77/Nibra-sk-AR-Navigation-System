@@ -16,7 +16,7 @@ MonoBehaviour:
   destinationType: 0
   icon: {fileID: 0}
   relativePosition: {x: -7, y: 0, z: 15}
-  nearestWaypointIndex: 16
+  nearestWaypointIndex: 12
   flightNumber: EK-302
   boardingTime: 15:15
   airlineName: Emirates

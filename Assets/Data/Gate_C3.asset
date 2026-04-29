@@ -16,7 +16,7 @@ MonoBehaviour:
   destinationType: 0
   icon: {fileID: 0}
   relativePosition: {x: 10, y: 0, z: 14}
-  nearestWaypointIndex: 23
+  nearestWaypointIndex: 19
   flightNumber: SV-220
   boardingTime: 18:15
   airlineName: Saudia

@@ -16,7 +16,7 @@ MonoBehaviour:
   destinationType: 0
   icon: {fileID: 0}
   relativePosition: {x: 4, y: 0, z: 14}
-  nearestWaypointIndex: 21
+  nearestWaypointIndex: 17
   flightNumber: WY-603
   boardingTime: 13:45
   airlineName: Oman Air

@@ -16,7 +16,7 @@ MonoBehaviour:
   destinationType: 0
   icon: {fileID: 0}
   relativePosition: {x: 3, y: 0, z: 18}
-  nearestWaypointIndex: 20
+  nearestWaypointIndex: 16
   flightNumber: GF-115
   boardingTime: 16:30
   airlineName: Gulf Air

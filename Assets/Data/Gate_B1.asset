@@ -16,7 +16,7 @@ MonoBehaviour:
   destinationType: 0
   icon: {fileID: 0}
   relativePosition: {x: -3, y: 0, z: 18}
-  nearestWaypointIndex: 18
+  nearestWaypointIndex: 14
   flightNumber: TK-712
   boardingTime: 14:45
   airlineName: Turkish Airlines

@@ -33,7 +33,12 @@ namespace Nibrask.DebugUtils
         [Header("Fallback primitive settings (used when no prefab is assigned)")]
         [SerializeField]
         [Tooltip("Scale of the fallback primitive marker")]
-        private float fallbackMarkerScale = 0.15f;
+        private float fallbackMarkerScale = 0.3f;
+
+        [SerializeField]
+        [Tooltip("Scale for service building cubes (Café, Restaurant, Restroom). " +
+                 "Large enough to feel like buildings in AR/VR.")]
+        private float buildingScale = 2.5f;
 
         [Header("Label settings")]
         [SerializeField]
@@ -97,8 +102,9 @@ namespace Nibrask.DebugUtils
 
             if (prefab != null)
             {
-                // Instantiate the assigned prefab
-                marker = Instantiate(prefab, worldPos, Quaternion.identity, transform);
+                // Instantiate the assigned prefab — face toward center (player origin)
+                Quaternion faceCenter = GetFaceCenterRotation(worldPos, anchor);
+                marker = Instantiate(prefab, worldPos, faceCenter, transform);
                 marker.name = $"Marker_{dest.destinationName}";
 
                 // Tint the prefab's child meshes so each destination looks unique
@@ -111,7 +117,7 @@ namespace Nibrask.DebugUtils
             else
             {
                 // No prefab assigned — fall back to a colored primitive
-                marker = SpawnFallbackPrimitive(dest, worldPos);
+                marker = SpawnFallbackPrimitive(dest, worldPos, anchor);
             }
 
             if (marker == null) return;
@@ -241,8 +247,9 @@ namespace Nibrask.DebugUtils
         /// <summary>
         /// Creates a simple colored primitive as a fallback when no prefab is assigned.
         /// Each destination type gets a unique shape and color.
+        /// Service buildings (Café, Restaurant, Restroom) are scaled up to feel like buildings.
         /// </summary>
-        private GameObject SpawnFallbackPrimitive(DestinationData dest, Vector3 worldPos)
+        private GameObject SpawnFallbackPrimitive(DestinationData dest, Vector3 worldPos, Transform anchor)
         {
             PrimitiveType primType;
             Color color;
@@ -251,8 +258,20 @@ namespace Nibrask.DebugUtils
             var marker = GameObject.CreatePrimitive(primType);
             marker.name = $"Marker_{dest.destinationName}";
             marker.transform.position = worldPos;
-            marker.transform.localScale = Vector3.one * fallbackMarkerScale;
+
+            // Service buildings get a large scale; other fallbacks stay small
+            bool isBuilding = dest.destinationType == DestinationType.Cafe
+                           || dest.destinationType == DestinationType.Restaurant
+                           || dest.destinationType == DestinationType.Restroom;
+            float scale = isBuilding ? buildingScale : fallbackMarkerScale;
+            marker.transform.localScale = isBuilding
+                ? new Vector3(scale * 1.5f, scale * 0.6f, scale * 0.5f) // wide, short building shape
+                : Vector3.one * scale;
+
             marker.transform.SetParent(transform);
+
+            // Rotate to face center/player
+            marker.transform.rotation = GetFaceCenterRotation(worldPos, anchor);
 
             // Remove collider
             var col = marker.GetComponent<Collider>();
@@ -271,6 +290,23 @@ namespace Nibrask.DebugUtils
             }
 
             return marker;
+        }
+
+        /// <summary>
+        /// Returns a rotation that makes the marker face toward the anchor (player origin)
+        /// on the XZ plane. This ensures gate archways and service buildings all
+        /// orient toward the center of the terminal where the player stands.
+        /// </summary>
+        private Quaternion GetFaceCenterRotation(Vector3 worldPos, Transform anchor)
+        {
+            Vector3 center = anchor != null ? anchor.position : Vector3.zero;
+            Vector3 dirToCenter = center - worldPos;
+            dirToCenter.y = 0f; // stay level on XZ plane
+
+            if (dirToCenter.sqrMagnitude < 0.001f)
+                return Quaternion.identity;
+
+            return Quaternion.LookRotation(dirToCenter, Vector3.up);
         }
 
         /// <summary>

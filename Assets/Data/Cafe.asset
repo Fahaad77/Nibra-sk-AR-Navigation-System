@@ -16,7 +16,7 @@ MonoBehaviour:
   destinationType: 7
   icon: {fileID: 0}
   relativePosition: {x: -7, y: 0, z: 9}
-  nearestWaypointIndex: 9
+  nearestWaypointIndex: 5
   flightNumber: 
   boardingTime: 
   airlineName: 

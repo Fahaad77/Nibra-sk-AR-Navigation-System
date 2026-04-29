@@ -16,7 +16,7 @@ MonoBehaviour:
   destinationType: 0
   icon: {fileID: 0}
   relativePosition: {x: 0, y: 0, z: 19}
-  nearestWaypointIndex: 19
+  nearestWaypointIndex: 15
   flightNumber: MS-801
   boardingTime: 15:30
   airlineName: EgyptAir
