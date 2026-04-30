@@ -2482,9 +2482,10 @@ MonoBehaviour:
   - destinationType: 0
     prefab: {fileID: 6535751743217992273, guid: 784d8e8c28fcea346bb3320f8d6fac83, type: 3}
   fallbackMarkerScale: 0.15
+  buildingScale: 2.5
   showLabels: 1
   labelHeightOffset: 1.25
-  heightOffset: 1
+  heightOffset: 1.3
 --- !u!224 &637151525 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5551017266776680517, guid: 02644bbd28622410a84cf154fc436b8a, type: 3}
