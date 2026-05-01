@@ -1,4 +1,4 @@
-# Nibrask AR Navigation System
+# Nibrāsk AR Navigation System
 
 ## Project Description
 
