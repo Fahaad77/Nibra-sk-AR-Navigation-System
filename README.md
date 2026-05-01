@@ -4,7 +4,7 @@
 
 Nibrāsk AR Navigation System is a Unity-based augmented reality navigation prototype for indoor spaces such as airport terminals. The application uses the Android device camera, Unity AR Foundation, and ARCore plane tracking to place a virtual terminal map into the real world. After the user scans the floor and places the terminal origin, the system displays destination options, calculates a route through a waypoint graph, and renders camera-based AR path guidance using floor-aligned paths, directional arrows, distance updates, and arrival feedback.
 
-The project is designed as an academic AR submission that demonstrates mobile AR interaction, spatial anchoring, pathfinding, real-time visual guidance, and user feedback through UI, audio, and haptics.
+The project demonstrates core AR concepts including spatial anchoring, indoor navigation, pathfinding, and real-time user guidance through visual cues, audio feedback, and basic haptic interaction.
 
 ## Project Information
 
